@@ -45,6 +45,7 @@
 <ul>
 <li>jeton de session</li>
 <li>réglages locaux : code parents (haché), vibrations, seuil d'échange, compteurs d'usage. Ces réglages ne quittent jamais l'appareil.</li>
+<li>mode tablette (Android) : empreinte de chaque carte associée, calculée sur l'appareil (l'identifiant de la carte n'est jamais gardé en clair), et délai d'inactivité. Ces données ne quittent jamais la tablette.</li>
 </ul>
 <p><strong>Ce que nous ne collectons pas</strong> : ni photo d'enfant, ni position, ni carnet d'adresses, ni identifiant publicitaire, ni donnée biométrique, ni historique de navigation.</p>
 
@@ -112,7 +113,8 @@
 <li>Chiffrement de bout en bout des échanges (HTTPS/TLS).</li>
 <li>Cloisonnement par compte au niveau de la base de données : les politiques de sécurité au niveau des lignes interdisent à un parent d'accéder aux données d'un autre.</li>
 <li>Mots de passe hachés, jamais stockés en clair.</li>
-<li>Code parents haché, conservé uniquement sur l'appareil, et effacé à la déconnexion.</li>
+<li>Code parents haché, conservé uniquement sur l'appareil, et effacé quand le parent se déconnecte ou qu'un autre compte se connecte.</li>
+<li>Cartes du mode tablette : seules leurs empreintes sont gardées, sur la tablette, et effacées quand le parent quitte le mode tablette ou se déconnecte.</li>
 </ul>
 
 <h2>11. Modifications</h2>
