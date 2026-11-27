@@ -13,7 +13,7 @@
 <header class="site"><img src="../icone.png" alt="" width="48" height="48"><a href="../">Manhaj Kids</a></header>
 <main>
 <h1>Politique de confidentialité — Manhaj Kids</h1>
-<p class="maj">Dernière mise à jour : 26 novembre 2026</p>
+<p class="maj">Dernière mise à jour : 27 novembre 2026</p>
 
 <h2>1. Responsable du traitement</h2>
 <p>L'application <strong>Manhaj Kids</strong> est éditée par <strong>Zawar Software</strong>, dont l'adresse est <strong>7 rue Saint-Christophe, 58120 Château-Chinon, France</strong>.</p>
@@ -21,6 +21,7 @@
 
 <h2>2. En un mot</h2>
 <p>Manhaj Kids <strong>ne contient aucune publicité, aucun outil tiers de mesure d'audience et aucun kit de développement tiers de suivi</strong>. Rien de ce que fait votre enfant dans l'application n'est transmis à un annonceur, à un réseau social ou à un service d'analyse. Les données qui quittent l'appareil sont celles nécessaires à la synchronisation entre vos appareils, plus une ligne par jour qui note que le compte a ouvert l'application (voir §3) ; elles vont chez notre seul sous-traitant technique, Supabase.</p>
+<p>Une seule chose peut être partagée avec une autre personne, et seulement si vous le décidez : <strong>le suivi d'un enfant par un proche</strong> (grand-parent, parent qui vit ailleurs), décrit au <a href="#suivi">§9</a>. Sans invitation de votre part, personne d'autre que vous ne voit votre famille.</p>
 
 <h2>3. Données collectées</h2>
 <p><strong>Compte parent</strong></p>
@@ -49,6 +50,14 @@
 <li>mode tablette (Android) : empreinte de chaque carte associée, calculée sur l'appareil (l'identifiant de la carte n'est jamais gardé en clair), et délai d'inactivité. Ces données ne quittent jamais la tablette.</li>
 <li>ouverture de l'application : une ligne par compte, par jour et par plateforme (Android, iPhone, web), avec le numéro de version de l'application. Elle ne contient rien de ce que fait l'enfant. Elle sert à compter les comptes qui utilisent l'application et à savoir quelles versions sont encore en circulation avant d'en demander la mise à jour.</li>
 </ul>
+<p><strong>Suivi par un proche (seulement si le parent invite quelqu'un)</strong></p>
+<ul>
+<li>compte du proche : adresse e-mail et mot de passe haché, comme un compte parent</li>
+<li>accès accordé : l'enfant concerné, le compte du proche, le surnom que le parent lui donne, ses droits (voir seulement, ajouter des missions, voir les prières et le Coran) et les dates</li>
+<li>invitation : code de 8 caractères conservé <strong>uniquement haché</strong> (jamais en clair), date d'expiration</li>
+<li>compteur d'essais de code, pour limiter les essais répétés</li>
+<li>missions « Sur mesure » ajoutées par le proche, avec la mention de son surnom</li>
+</ul>
 <p><strong>Ce que nous ne collectons pas</strong> : ni photo d'enfant, ni position, ni carnet d'adresses, ni identifiant publicitaire, ni donnée biométrique, ni historique de navigation.</p>
 
 <h2>4. Finalités et bases légales</h2>
@@ -59,6 +68,8 @@
 <tr><td>Afficher les missions et les étoiles de vos enfants</td><td>Exécution du contrat</td></tr>
 <tr><td>Synchroniser entre vos appareils</td><td>Exécution du contrat</td></tr>
 <tr><td>Assurer la sécurité du service</td><td>Intérêt légitime (art. 6.1.f)</td></tr>
+<tr><td>Laisser un proche suivre un enfant, à l'invitation du parent</td><td>Exécution du contrat : service demandé par le parent</td></tr>
+<tr><td>Montrer au proche les prières et le Coran de l'enfant, si le parent l'a choisi</td><td>Consentement explicite du parent (art. 9.2.a RGPD, données religieuses), retirable à tout moment</td></tr>
 <tr><td>Améliorer l'application et la garder à jour</td><td>Intérêt légitime : statistiques <strong>locales</strong> et comptage des ouvertures quotidiennes. L'éditeur ne consulte que des totaux calculés par le serveur (nombre de comptes, de missions cochées, de prières…), jamais les données d'une famille précise</td></tr>
 </tbody></table></div>
 <p>Les données des enfants sont saisies par le parent, sous sa responsabilité, dans le cadre de l'autorité parentale. Aucun enfant ne crée de compte : l'espace enfant n'existe qu'à l'intérieur du compte du parent.</p>
@@ -78,6 +89,8 @@
 <tr><td>Compte et profils enfants</td><td>Tant que le compte existe</td></tr>
 <tr><td>Historique des missions et des récompenses</td><td>Tant que le compte existe</td></tr>
 <tr><td>Photos de récompense</td><td>Jusqu'à leur remplacement ou la suppression du compte</td></tr>
+<tr><td>Invitation à suivre un enfant</td><td>Code valable 48 heures et à usage unique, inutilisable ensuite ; annulable à tout moment par le parent</td></tr>
+<tr><td>Accès d'un proche à un enfant</td><td>Jusqu'à son retrait par le parent ou par le proche, ou la suppression d'un des deux comptes</td></tr>
 <tr><td>Ouvertures quotidiennes de l'application</td><td>Treize mois, puis effacées ; effacées aussitôt avec le compte</td></tr>
 <tr><td>Compte inactif</td><td>Supprimé au bout de trente-six mois sans connexion, après un avertissement par e-mail</td></tr>
 <tr><td>Après suppression du compte</td><td>Effacement immédiat et définitif (voir <a href="#suppression">§8</a>)</td></tr>
@@ -89,39 +102,56 @@
 <li><strong>Accès et rectification</strong> : la plupart des données se consultent et se modifient directement dans l'application.</li>
 <li><strong>Effacement</strong> : voir la section suivante.</li>
 <li><strong>Portabilité</strong> : écrivez à <strong><a href="mailto:zawarsoftware@gmail.com">zawarsoftware@gmail.com</a></strong>, nous vous transmettons vos données dans un format lisible par machine sous trente jours.</li>
+<li><strong>Retrait d'un accès</strong> : le parent modifie ou retire l'accès d'un proche à tout moment (fiche de l'enfant → « Qui suit »), et le proche peut choisir « Ne plus suivre ». L'effet est immédiat.</li>
 <li><strong>Opposition au comptage des ouvertures</strong> : écrivez à la même adresse, nous effaçons sous trente jours les ouvertures déjà enregistrées pour votre compte.</li>
 </ul>
 <p>Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
 
 <h2 id="suppression">8. Suppression du compte</h2>
-<p>La suppression est <strong>définitive et sans récupération possible</strong>. Elle efface le compte, les profils des enfants, les défis, les récompenses, les photos et l'historique complet.</p>
+<p>La suppression est <strong>définitive et sans récupération possible</strong>. Elle efface le compte, les profils des enfants, les défis, les récompenses, les photos et l'historique complet, ainsi que les invitations en cours et les accès donnés aux proches : un proche ne voit alors plus rien.</p>
 <p>Deux moyens, au choix :</p>
 <ol>
 <li><strong>Depuis l'application</strong> : Espace parents → Réglages → « Supprimer mon compte et toutes les données ».</li>
 <li><strong>Depuis notre site</strong>, sans installer l'application : <strong><a href="../supprimer-mon-compte/">page de suppression de compte</a></strong>, ou en écrivant à <strong><a href="mailto:zawarsoftware@gmail.com">zawarsoftware@gmail.com</a></strong>. La demande est traitée sous trente jours.</li>
 </ol>
 
-<h2>9. Enfants</h2>
+<p>Si c'est le compte d'un <strong>proche</strong> qui est supprimé, ses accès disparaissent. Les missions qu'il avait ajoutées restent chez le parent, sans son nom.</p>
+
+<h2 id="suivi">9. Suivi d'un enfant par un proche</h2>
+<p>Le parent peut inviter un proche à suivre <strong>un enfant précis</strong>. C'est un choix du parent, enfant par enfant ; il peut être retiré à tout moment.</p>
+<ul>
+<li><strong>Comment</strong> : l'application affiche un code de 8 caractères, valable 48 heures et utilisable une seule fois. Le parent l'envoie lui-même (message, WhatsApp…) ; nous n'envoyons rien. Le proche crée son propre compte, puis saisit le code.</li>
+<li><strong>Ce que le proche voit</strong> : le prénom et l'âge de l'enfant, ses étoiles, son niveau et ses badges, et les missions et défis du jour, cochés ou non, mis à jour en direct.</li>
+<li><strong>Prières et Coran</strong> : le proche ne les voit que si le parent l'a choisi expressément pour cette personne. L'interrupteur est éteint par défaut. Il ne peut être allumé que si « Sauvegarder sur le serveur » l'est aussi. Éteindre la sauvegarde ou effacer les prières et le Coran retire ce droit à tous les proches.</li>
+<li><strong>Ce que le proche ne voit jamais</strong> : les récompenses et leurs photos, l'album, les autres enfants du parent, les réglages et le compte du parent.</li>
+<li><strong>Ajouter des missions</strong> : si le parent l'autorise, le proche peut ajouter des missions « Sur mesure », marquées « ajouté par » suivi de son surnom. Le parent les voit et peut les retirer. Le proche ne peut ni cocher, ni donner d'étoiles, ni valider une récompense.</li>
+<li><strong>Retirer l'accès</strong> : le parent modifie ou retire l'accès à tout moment ; le proche peut choisir « Ne plus suivre ».</li>
+<li><strong>Suppression d'un compte</strong> : voir le <a href="#suppression">§8</a>.</li>
+</ul>
+<p>Le proche n'est pas un sous-traitant : c'est une personne que le parent choisit d'informer. Le parent est responsable de ce choix, en tant que titulaire de l'autorité parentale.</p>
+
+<h2>10. Enfants</h2>
 <p>Manhaj Kids est conçue pour être utilisée par des enfants, sous la responsabilité de leurs parents.</p>
 <ul>
-<li>Aucun enfant ne peut créer de compte : seuls les parents le peuvent.</li>
+<li>Aucun enfant ne peut créer de compte : seuls des adultes le peuvent (parents, et proches invités par un parent).</li>
 <li>L'espace parents est protégé par un code à quatre chiffres ou, tant qu'aucun code n'a été défini, par une question arithmétique hors de portée d'un jeune enfant.</li>
-<li>L'application ne contient <strong>aucun lien vers l'extérieur</strong>, aucun achat intégré, aucune messagerie et aucun contenu généré par d'autres utilisateurs.</li>
+<li>L'application ne contient <strong>aucun lien vers l'extérieur</strong>, aucun achat intégré et aucune messagerie. Le seul contenu venant d'une autre personne que le parent est une mission « Sur mesure » ajoutée par un proche, que le parent a autorisé à le faire et qu'il peut retirer (voir <a href="#suivi">§9</a>).</li>
 <li>Les seules données concernant un enfant sont celles saisies par son parent : prénom, âge et avatar choisi dans une liste. Aucune photo d'enfant n'est demandée ni stockée.</li>
 <li>Conformément au RGPD, le consentement est donné par le titulaire de l'autorité parentale à la création du compte.</li>
 <li>Pour les États-Unis, l'éditeur n'adresse pas l'application aux enfants de moins de treize ans sans consentement parental vérifiable au sens du COPPA.</li>
 </ul>
 
-<h2>10. Sécurité</h2>
+<h2>11. Sécurité</h2>
 <ul>
 <li>Chiffrement de bout en bout des échanges (HTTPS/TLS).</li>
-<li>Cloisonnement par compte au niveau de la base de données : les politiques de sécurité au niveau des lignes interdisent à un parent d'accéder aux données d'un autre.</li>
+<li>Cloisonnement par compte au niveau de la base de données : les politiques de sécurité au niveau des lignes interdisent à un parent d'accéder aux données d'un autre. La seule exception est l'accès qu'un parent accorde lui-même à un proche (<a href="#suivi">§9</a>), limité à l'enfant choisi et aux droits donnés.</li>
+<li>Codes d'invitation : conservés uniquement hachés, valables 48 heures, à usage unique, avec un nombre d'essais limité.</li>
 <li>Mots de passe hachés, jamais stockés en clair.</li>
 <li>Code parents haché, conservé uniquement sur l'appareil, et effacé quand le parent se déconnecte ou qu'un autre compte se connecte.</li>
 <li>Cartes du mode tablette : seules leurs empreintes sont gardées, sur la tablette, et effacées quand le parent quitte le mode tablette ou se déconnecte.</li>
 </ul>
 
-<h2>11. Modifications</h2>
+<h2>12. Modifications</h2>
 <p>Toute modification substantielle de cette politique sera annoncée dans l'application avant son entrée en vigueur. La date en tête de document indique la dernière mise à jour.</p>
 </main>
 <footer><a href="../">Accueil</a> · <a href="../supprimer-mon-compte/">Supprimer mon compte</a> · Zawar Software</footer>
